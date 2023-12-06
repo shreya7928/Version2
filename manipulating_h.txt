@@ -1,0 +1,16 @@
+// MANIPULATING MODULE HEADER
+
+// Header guard prevets multiple inclusion of the header in the same compilation unit
+#ifndef _MANIPULATING_H_
+#define _MANIPULATING_H_
+
+// Include necessary standard C libraries
+#include <stdio.h>
+#include <string.h>
+
+// Function declaration for manipulating function
+// This function is defined in another source file and is meant to demonstrate string manipulation
+void manipulating(void);
+
+// End of header guard
+#endif

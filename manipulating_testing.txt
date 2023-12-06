@@ -1,0 +1,24 @@
+*** Start of Comparing Strings Demo ***
+Type the 1st string to compare (q - to quit):
+a
+Type the 2nd string to compare:
+b
+'a' string is less than 'b'
+Type the 1st string to compare (q - to quit):
+3
+Type the 2nd string to compare:
+1
+'3' string is greater than '1'
+Type the 1st string to compare (q - to quit):
+1000
+Type the 2nd string to compare:
+1000
+'1000' is equal to '1000'
+Type the 1st string to compare (q - to quit):
+Hello, World!
+Type the 2nd string to compare:
+Goodbye, World!
+'Hello, World!' string is greater than 'Goodbye, World!'
+Type the 1st string to compare (q - to quit):
+q
+*** End of Comparing Strings Demo ***

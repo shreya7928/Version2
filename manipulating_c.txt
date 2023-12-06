@@ -1,0 +1,109 @@
+// MANIPULATING SOURCE
+
+// Disable secure warnings related to the use of certain funtions
+#define _CRT_SECURE_NO_WARNINGS
+
+// Define a constant BUFFER_SIZE with a value of 80
+#define BUFFER_SIZE 80
+
+// Include the header file "manipulatig.h"
+#include "manipulating.h"
+
+// Function to demonstrate concatenating strings
+// V1 indicated Version1
+void manipulating(void) {
+    // Print header message indicating the start of demonstration
+    // printf("*** Start of Concentating Strings Demo ***\n")
+
+    // Declare character arrays to store strings
+    // char    string1[BUFFER_SIZE];
+    // char    string2[BUFFER_SIZE];
+
+    // do {
+        // Prompt user to input the first string
+        // printf("Type the 1st string (q - to quit0 :\n");
+
+        // Read the 1st string from user input
+        // fgets(string1, BUFFER_SIZE, stdin);
+
+        // Remove the newline character at the end of the input
+        // string1[strlen(string1) - 1] = '\0';
+
+        // Check if entered string is not equal to "q"
+        // if ((strcmp(string1, "q") != 0)) {
+            // Prompt user to input second string
+            // printf("Type the 2nd string:\n");
+
+            // Read second string from the user input
+            // fgets(strig2, BUFFER_SIZE, stdin);
+
+            // Remove newline character at the end of the second input
+            // string2[strlen(string2) - 1] = '\0';
+
+            // Concatenate the first and secod strings
+            // strcat(string1, string2);
+
+            // Print the concatenated string
+            // printf("Concentated string is \'%s\'\n", string1);
+        // }
+
+     // Continue looping as long as the entered string is not "q"
+     // } while (strcmp(string1, "q") != 0);
+
+     // Print a message indicating the end of the demonstration
+     // printf("*** End of Concentenating Drings Demo ***\n\n");
+// }
+
+//V2
+        //Prints header message for demonstration
+	printf("*** Start of Comparing Strings Demo ***\n"); 
+
+        // Declare character arrays to store strings
+	char compare1[BUFFER_SIZE];
+	char compare2[BUFFER_SIZE];
+
+	int result;
+	do {
+                // Prompt user to input first string
+		printf("Type the 1st string to compare (q - to quit):\n");
+
+                // Read the 1st string from user input
+		fgets(compare1, BUFFER_SIZE, stdin); 
+
+                //Gets length of 'compare1' until reaches '\0
+		compare1[strlen(compare1) - 1] = '\0';
+
+                //If 'compare1' is not equal to 'q' then continue
+		if (strcmp(compare1, "q") != 0) { 
+
+                        // Prompt user to input first string
+			printf("Type the 2nd string to compare:\n");
+
+                        // Read the 1st string from user input
+			fgets(compare2, BUFFER_SIZE, stdin); 
+
+                        //Gets length of 'compare2'
+			compare2[strlen(compare2) - 1] = '\0';
+
+                        //Compares 'compare1' and 'compare2' and stores result
+			result = strcmp(compare1, compare2);
+ 
+			if (result < 0)
+                         //if result is less than 0 prints statement
+		         printf("\'%s\' string is less than \'%s\'\n", compare1, compare2);
+
+			else if (result == 0)
+                         //else if both are equal prints statement
+		         printf("\'%s\' is equal to \'%s\'\n", compare1, compare2);
+
+			else
+                         //else result is more than 0 prints statement
+		         printf("\'%s\' string is greater than \'%s\'\n", compare1, compare2);
+       		 }
+
+        //runs code until 'q' is entered
+	} while (strcmp(compare1, "q") != 0);
+ 
+        // Print a message indicating the end of the demonstration
+	printf("*** End of Comparing Strings Demo ***\n\n");
+}
